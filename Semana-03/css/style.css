@@ -1,3 +1,4 @@
+/*---- GENERAL ----*/
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -10,30 +11,29 @@ nav {
     width: 300px;
     height: 100%;
     background-color: #B1B2B6;
-    overflow: hidden;
 }
 
 nav input {
-    border: none;
-    margin: 35px;
-    height: 40px;
-    padding: 5px 20px;
     width: 230px;
+    height: 40px;
+    margin: 35px;
+    padding: 5px 20px;
     background: #FFFFFF;
-    border-radius: 3px;
     background-image: url('../assets/icons/Icon-search.png');
     background-position: 180px;
     background-size: 38px;
     background-repeat: no-repeat;
+    border: none;
+    border-radius: 3px;
     color: #373867;
 }
 
 nav input::placeholder{
     font-weight: 300;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     color: #373867;
     opacity: 0.5;
-    font-family: 'Roboto', sans-serif;
 }
 
 .nav-buttons {
@@ -45,10 +45,10 @@ nav input::placeholder{
     padding: 10px 27px;
     border-radius: 12px;
     border:none;
-    color: #FFFFFF;
     font-weight: 500;
     font-size: 12px;
     text-transform:uppercase;
+    color: #FFFFFF;
 }
 
 button.log-in {
@@ -66,13 +66,15 @@ button.sign-up {
 }
 
 nav .header {
-    text-transform:uppercase;
-    border-bottom:  1.5px solid #49A37B;
     padding-bottom: 8px;
+    border-bottom:  1.5px solid #49A37B;
+    text-transform:uppercase;
 }
+
 .menu ul, .get-in-touch p {
     padding-top: 16px;
 }
+
 .menu li {
     padding-top: 8px;
 }
@@ -96,12 +98,12 @@ a:visited, a:link {
 }
 
 .get-in-touch img {
-    height: 18px;
     position: relative;
     top: 3px;
+    height: 18px;
 }
 
-/*------ HOMEPAGE SECTION ------*/
+/*------ PAGE CONTENT + HEADER ------*/
 
 .page-content {
     position: relative;
@@ -110,15 +112,15 @@ a:visited, a:link {
     width: 1025px;
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 85px;
 }
 
 .header {
-    color: #373867;
     border-bottom: 5px solid #373867;
+    color: #373867;
 }
 
 .header h3 {
@@ -128,16 +130,18 @@ h1{
     text-transform:uppercase;
 }
 
+/*------ HOMEPAGE SECTION ------*/
+
 #homePage {
     margin: 35px 10px;
 }
 
 h2, .history-text h3 {
+    padding-bottom: 12px;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
-    color: #49A37B;
-    padding-bottom: 12px;
+    color: #49A37B;    
 }
 
 #homePage img {
@@ -145,24 +149,26 @@ h2, .history-text h3 {
     border-radius: 17px;
 }
 
-.app-text, .history-text{
+.app-text, .history-text {
+    position: relative;
+    bottom: 50px;
     font-weight: 400;
     line-height: 22px;
     text-align: justify;
-    position: relative;
-    bottom: 50px;
 }
-.app-info img, .history-text{
-    width: 500px;
+
+.app-info img, .history-text {
     display: inline-block;
+    width: 500px;
 }
 
 .history-info img, .app-text {
-    width: 430px;
-    height: 250px;
     display: inline-block;
     margin-right: 46px;
+    width: 430px;
+    height: 250px;
 }
+
 .history-info {
     margin-top: 50px;
 }
@@ -170,29 +176,29 @@ h2, .history-text h3 {
 .history-text button, #whyTrackgenix button {
     width: 80px;
     height: 26px;
-    font-weight: 500;
-    font-size: 9px;
-    color: #373867;
     margin-top: 13px;
     background: #AACE9B;
     border: none;
     border-radius: 5px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #373867;
 }
 
 /*------ FEATURES SECTION ------*/
 
 #features .text, #features ul {
+    margin: 26px 0px 40px;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     text-align: justify;
-    margin: 26px 0px 40px;
 }
 
 #features ul {
-    list-style:disc;
     position: relative;
     left: 70px;
+    list-style: disc;
 }
 
 li > span {
@@ -204,30 +210,30 @@ li > span {
 #whyTrackgenix img {
     width: 400px;
     height: 170px;
-    border: 0.7px solid #373867;
-    box-sizing: border-box;
-    border-radius: 17px;
-    object-fit: cover;
     margin: 0px 56px;
+    border: 0.7px solid #373867;
+    border-radius: 17px;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
 #whyTrackgenix .text {
-    width: 320px;
     display: inline-block;
     position: relative;
     bottom: 15px;
+    margin: 0px 94px;
+    width: 320px;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
-    margin: 0px 94px;
     text-align: center;
 }
 
 .text h4 {
+    padding-bottom: 12px;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    padding-bottom: 12px;
 }
 
 .container, .container-pair {
@@ -257,12 +263,22 @@ li > span {
 }
 
 #contactUs input, select {
-    color: #373867;
-    border: 0.7px solid #373867;
-    border-radius: 3px;
     width: 277px;
     height: 38px;
     padding: 0px 15px;
+    border: 0.7px solid #373867;
+    border-radius: 3px;
+    color: #373867;
+}
+
+textarea {
+    padding: 15px;
+    width: 340px;
+    height: 150px;
+    border: 0.7px solid #E0E0E0;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    color: #373867;    
 }
 
 #contactUs input::placeholder, textarea::placeholder{
@@ -272,40 +288,30 @@ li > span {
     opacity: 0.5;
 }
 
-textarea {
-    font-family: 'Roboto';
-    color: #373867;
-    border-radius: 3px;
-    padding: 15px;
-    width: 340px;
-    height: 150px;
-    border: 0.7px solid #E0E0E0;
-}
-
 .buttons button {
-    font-weight: 500;
-    font-size: 12px;
-    /* line-height: 14px; */
-    color:#373867;
     padding: 14px 36px;
     border-radius: 5px;
-    border:none;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color:#373867;
 }
 
 button.btn-send {
-    background: #AACE9B;
     margin-right: 35px;
+    background: #AACE9B;
 }
 
 button.btn-reset {
     background: #DADADA;
 }
 
-/*------ LISTED ELEMENTS SECTION ------*/
+/*------ LISTED ELEMENTS SECTION + FOOTER ------*/
 
 #listedElements, footer {
-    position:relative;
-    left:300px;
+    position: relative;
+    left: 300px;
     width: 1140px;
 }
 
@@ -314,41 +320,41 @@ button.btn-reset {
     color:#FFFFFF;
 }
 
-#listedElements div {
-    display: inline-block;
-    width: 20%;
-    position: relative;
-    left: 380px;
-    margin-bottom: 36px;
-}
-
 #listedElements h3 {
+    padding: 60px 0px 16px 100px;
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 60px 0px 16px 100px;
 }
+
+#listedElements div {
+    display: inline-block;
+    position: relative;
+    left: 380px;
+    width: 20%;
+    margin-bottom: 36px;
+}
+
 #listedElements h4 {
+    padding-bottom: 15px;
     font-weight: 700;
     font-size: 15px;
-    padding-bottom: 15px;
-
 }
+
 #listedElements ol {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
 }
 
-/*------ FOOTER SECTION ------*/
 footer {
-    text-align: center;
     margin: 18px 0px;
+    text-align: center;
 }
 
-.social-media a{
-    text-decoration: none;
+.social-media a {
     padding: 0px 8px;
+    text-decoration: none;
 }
 
 footer .text {
