@@ -110,7 +110,6 @@ a:visited, a:link {
     width: 1025px;
 }
 
-
 h1{
     font-weight: 700;
     font-size: 60px;
@@ -150,8 +149,8 @@ h2, .history-text h3 {
     font-weight: 400;
     line-height: 22px;
     text-align: justify;
-    position: absolute;
-    /* left: 500px; */bottom: 50px;
+    position: relative;
+    bottom: 50px;
 }
 .app-info img, .history-text{
     width: 500px;
@@ -177,9 +176,8 @@ h2, .history-text h3 {
     margin-top: 13px;
     background: #AACE9B;
     border: none;
-    position: absolute;border-radius: 5px;
+    border-radius: 5px;
 }
-
 
 /*------ FEATURES SECTION ------*/
 
