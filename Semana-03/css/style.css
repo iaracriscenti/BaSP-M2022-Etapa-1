@@ -1,0 +1,181 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color:#373867;
+}
+
+/*---- NAV / SIDEBAR ----*/
+nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #B1B2B6;
+    overflow: hidden;
+}
+
+nav input {
+    border: none;
+    margin: 35px;
+    height: 40px;
+    padding: 5px 20px;
+    width: 230px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    background-image: url('../assets/icons/Icon-search.png');
+    background-position: 180px;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    color: #373867;
+}
+
+nav input::placeholder{
+    font-weight: 300;
+    font-size: 18px;
+    color: #373867;
+    opacity: 0.5;
+    font-family: 'Roboto';
+}
+
+.nav-buttons {
+    width: fit-content;
+    /* text-align: center; */margin: 0px 48px;
+}
+
+.nav-buttons button {
+    padding: 10px 27px;
+    border-radius: 12px;
+    border:none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform:uppercase;
+}
+
+button.log-in {
+    background: #49A37B;
+}
+
+button.sign-up {
+    background: #373867;
+}
+
+.menu, .get-in-touch {
+    margin: 35px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav .header {
+    text-transform:uppercase;
+    border-bottom:  1.5px solid #49A37B;
+    padding-bottom: 8px;
+}
+.menu ul, .get-in-touch p {
+    padding-top: 16px;
+}
+.menu li {
+    padding-top: 8px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+a:visited, a:link {
+    color:#373867;
+}
+
+.get-in-touch {
+    margin-top: 270px;
+}
+
+.get-in-touch p:last-child {
+    position: relative;
+    left: 24px;
+    padding-top: 4px;
+}
+
+.get-in-touch img {
+    height: 18px;
+    position: relative;
+    top: 3px;
+}
+
+/*------ HOMEPAGE SECTION ------*/
+
+.page-content {
+    position: relative;
+    left: 300px;
+    padding: 70px 60px 0px 60px;
+    width: 1025px;
+}
+
+
+h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 85px;
+}
+
+.header {
+    color: #373867;
+    border-bottom: 5px solid #373867;
+}
+
+.header h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform:uppercase;
+}
+
+#homePage {
+    margin: 35px 10px;
+}
+
+h2, .history-text h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #49A37B;
+    padding-bottom: 12px;
+}
+
+#homePage img {
+    border: 0.7px solid #373867;
+    border-radius: 17px;
+}
+
+.app-text, .history-text{
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    position: relative;
+    bottom: 50px;
+}
+.app-info img, .history-text{
+    width: 500px;
+    display: inline-block;
+}
+
+.history-info img, .app-text {
+    width: 430px;
+    height: 250px;
+    display: inline-block;
+    margin-right: 46px;
+}
+.history-info {
+    margin-top: 50px;
+}
+
+.history-text button, #whyTrackgenix button {
+    width: 80px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #373867;
+    margin-top: 13px;
+    background: #AACE9B;
+    border: none;
+    border-radius: 5px;
+}
