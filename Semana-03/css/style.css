@@ -33,12 +33,12 @@ nav input::placeholder{
     font-size: 18px;
     color: #373867;
     opacity: 0.5;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-buttons {
     width: fit-content;
-    /* text-align: center; */margin: 0px 48px;
+    margin: 0px 48px;
 }
 
 .nav-buttons button {
@@ -150,8 +150,8 @@ h2, .history-text h3 {
     font-weight: 400;
     line-height: 22px;
     text-align: justify;
-    position: relative;
-    bottom: 50px;
+    position: absolute;
+    /* left: 500px; */bottom: 50px;
 }
 .app-info img, .history-text{
     width: 500px;
@@ -177,5 +177,66 @@ h2, .history-text h3 {
     margin-top: 13px;
     background: #AACE9B;
     border: none;
-    border-radius: 5px;
+    position: absolute;border-radius: 5px;
+}
+
+
+/*------ FEATURES SECTION ------*/
+
+#features .text, #features ul {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: justify;
+    margin: 26px 0px 40px;
+}
+
+#features ul {
+    list-style:disc;
+    position: relative;
+    left: 70px;
+}
+
+li > span {
+    font-weight: 500;
+}
+
+/*------ WHY TRACKGENIX SECTION ------*/
+
+#whyTrackgenix img {
+    width: 400px;
+    height: 170px;
+    border: 0.7px solid #373867;
+    box-sizing: border-box;
+    border-radius: 17px;
+    object-fit: cover;
+    margin: 0px 56px;
+}
+
+#whyTrackgenix .text {
+    width: 320px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0px 94px;
+    text-align: center;
+}
+
+.text h4 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 12px;
+}
+
+.container, .container-pair {
+    padding: 40px 0px;
+}
+
+.container-pair {
+    border-bottom: 0.7px solid #373867;
+    border-top: 0.7px solid #373867;
 }
