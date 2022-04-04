@@ -12,7 +12,7 @@ The activity consisted in building an HTML Landing Page structure. This Landing 
 1. Header with the app name
 2. Subheader with a description
 3. Sidebar
-4. Couple of sections that cointains: features, properties, company's history, form to request info, and so on.
+4. Couple of sections that contains: features, properties, company's history, form to request info, and so on.
 5. Footer with the company's social networks.
 ```
 
