@@ -1,13 +1,21 @@
-# Become a Software Professional - Stage 1
+# Become a Software Professional course
 
-This repository contains the resolution of the Radium Rocket BaSP 2022 course' week-1 challenge.
+This repository contains the resolution of the Radium Rocket BaSP 2022 course's challenge.
 
-## The challenge
+# The challenge: Trackgenix
 
-The activity consisted in building an HTML Landing Page structure. This Landing page web will be about a web system called *Trackgenix*, a place that will allow the record of hours worked by each employee in each project and work team.
+## Description
+The challenge consists in the development of a web system called *Trackgenix*, a place that will allow the record of hours worked by each employee in each project and work team.
 
-## The structure
+## How to open
+```
+1. Access to the folder "Semana-0X" and download the content.
+2. Open the file "index.html" on your browser
+```
 
+### Week 02
+
+The activity consisted in building the HTML Landing Page structure:
 ```
 1. Header with the app name
 2. Subheader with a description
@@ -15,9 +23,8 @@ The activity consisted in building an HTML Landing Page structure. This Landing 
 4. Couple of sections that contains: features, properties, company's history, form to request info, and so on.
 5. Footer with the company's social networks.
 ```
+### Week 03
 
-## Overview
-You can see the work done by downloading the *Semana-01* folder and opening the *index.html* file.
-
+The activity consisted in including the styles corresponding to the structure HTML following a previously designed landing template. No responsive properties were used.
 
 
