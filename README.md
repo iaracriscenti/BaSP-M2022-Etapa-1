@@ -5,6 +5,7 @@ This repository contains the resolution of the Radium Rocket BaSP 2022 course's 
 # The challenge: Trackgenix
 
 ## Description
+
 The challenge consists in the development of a web system called *Trackgenix*, a place that will allow the record of hours worked by each employee in each project and work team.
 
 ## How to open
@@ -27,4 +28,10 @@ The activity consisted in building the HTML Landing Page structure:
 
 The activity consisted in including the styles corresponding to the structure HTML following a previously designed landing template. No responsive properties were used.
 
+### Week 04
 
+The activity consisted in adapting the landing page for cellphones, tablets and desktop. This was done by including the styles corresponding to the structure HTML but now using *Flexbox* as the main tool for the creation of a *Responsive Desing* following the concept of Mobile First.
+
+You can have an overview following this link: https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
+
+_By Iara Criscenti_
