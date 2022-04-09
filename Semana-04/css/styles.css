@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #373867;
+    overflow-x: hidden;
+}
+
+.page-content section, article {
+    margin-top: 27px;
+}
+
+p, label, span { 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
