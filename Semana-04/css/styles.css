@@ -15,3 +15,8 @@ p, label, span {
     line-height: 22px;
 }
 
+@media only screen and (min-width: 1024px) {
+    header, .page-content, #listed-elements, footer {
+        margin-left: 25%;
+    }
+}
