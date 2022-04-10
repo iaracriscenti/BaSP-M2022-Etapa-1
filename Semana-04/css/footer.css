@@ -1,0 +1,45 @@
+#listed-elements {
+    background-color: #373867;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+}
+
+#listed-elements h3 {
+    display: none;
+}
+
+#listed-elements div {
+    margin: 15px;
+}
+
+#listed-elements h4 {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+#listed-elements div ol {
+    list-style: decimal ;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-media {
+    margin: 13px 0px;
+}
+
+.social-media a {
+    padding: 0px 8px;
+    text-decoration: none;
+}
+
+footer .text p {
+    font-size: 12px;
+}
