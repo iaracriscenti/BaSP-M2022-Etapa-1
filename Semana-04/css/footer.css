@@ -7,10 +7,15 @@
 
 #listed-elements h3 {
     display: none;
+    /* padding: 60px 0px 16px 100px; */
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 #listed-elements div {
-    margin: 15px;
+    margin: 15px; 
 }
 
 #listed-elements h4 {
@@ -18,7 +23,6 @@
     font-weight: 700;
     font-size: 12px;
 }
-
 
 #listed-elements div ol {
     list-style: decimal ;
@@ -42,4 +46,21 @@ footer {
 
 footer .text p {
     font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #listed-elements h3 {
+        display: block;
+        top: 20px;
+    }
+
+    #listed-elements div {
+        margin-top: 70px;
+    }
+
+    #listed-elements div ol, #listed-elements h4 {
+        
+        font-size: 15px; 
+    }
 }
