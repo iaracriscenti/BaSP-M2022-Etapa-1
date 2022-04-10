@@ -22,7 +22,7 @@
     margin-left: 11.5%;
 }
 
-#home-page > div, #why-trackgenix > div {
+#home-page, #home-page > div, #why-trackgenix > div {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -36,19 +36,25 @@
     color: #49A37B;
 }
 
-#home-page img {
-    border-radius: 10px;
-    width: 100%;
-    margin-top: 20px
-}
+#home-page .img {
 
-.history-info {
-    margin-top: 27px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 172px;
 }
 
 .app-info img {
-    height: 132px;
+    width: 100%;
     object-fit: cover;
+}
+
+.history-text, .app-info img {
+    margin: 20px;
+    /* flex: 40; */
+}
+
+.app-text, .history-info img {
+    flex: 60;
 }
 
 .history-info img, .container-pair .text {
@@ -78,6 +84,7 @@
 
 #features .list ul {
     font-size: 14px;
+    line-height: 22px;
     list-style: disc;
 }
 
@@ -110,7 +117,7 @@ li > span {
 }
 
 #why-trackgenix img {
-    min-width: 225px;
+    height: 115px;
     border-radius: 17px;
     object-fit: cover;
 }
@@ -118,7 +125,7 @@ li > span {
 /*------ CONTACT US SECTION ------*/
 
 #contact-us form {
-    margin: 30px 35px;
+    margin: 30px 37px 30px 30px;
 }
 
 #contact-us label {
@@ -135,10 +142,14 @@ li > span {
     border: 0.5px solid #373867;
     border-radius: 3px;
     color: #373867;
+    padding: 4px 6px;
+}
+
+#contact-us select {
+    box-sizing: unset;
 }
 
 #contact-us input::placeholder, textarea::placeholder {
-    padding: 6px 6px;
     font-weight: 400;
     font-size: 14px;
     color: #373867;
@@ -174,3 +185,26 @@ button.btn-send {
 button.btn-reset {
     background: #DADADA;
 }
+
+@media only screen and (min-width: 768px) {
+    #home-page {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    #home-page > div, #why-trackgenix > div {
+        flex-direction: row;
+        text-align: justify;
+        /* justify-content: space-around; */
+    }
+    .history-info img, .container-pair .text {
+        order: unset;
+    }
+
+    .app-info img {
+        height: max-content;
+    }
+    #home-page img {
+        min-width: 30%
+    }
+
+  }
