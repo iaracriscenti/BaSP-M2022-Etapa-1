@@ -17,15 +17,15 @@
 
 /*------ HOMEPAGE SECTION ------*/
 
-#home-page {
-    margin-right: 11.5%;
-    margin-left: 11.5%;
-}
-
 #home-page, #home-page > div, #why-trackgenix > div {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+#home-page {
+    margin: 3% 11.5% 0;
 }
 
 #home-page h2 {
@@ -36,25 +36,19 @@
     color: #49A37B;
 }
 
-#home-page .img {
-
+#home-page img {
     border-radius: 10px;
-    overflow: hidden;
-    height: 172px;
-}
-
-.app-info img {
-    width: 100%;
     object-fit: cover;
+    margin-top: 20px;
 }
 
 .history-text, .app-info img {
-    margin: 20px;
-    /* flex: 40; */
+    flex: 55;
 }
 
 .app-text, .history-info img {
-    flex: 60;
+    margin-bottom: 20px;
+    flex: 45;
 }
 
 .history-info img, .container-pair .text {
@@ -64,9 +58,8 @@
 .history-text a, #why-trackgenix a {
     padding: 7px 0px;
     display: block;
-    margin: auto;
+    margin: 13px auto;
     width: 80px;
-    margin-top: 13px;
     background: #AACE9B;
     text-decoration: none;
     border-radius: 5px;
@@ -78,7 +71,7 @@
 /*------ FEATURES SECTION ------*/
 
 #features .text, #features .list {
-    margin: 4% 8%;
+    margin: 3% 8%;
     text-align: justify;
 }
 
@@ -96,6 +89,7 @@ li > span {
 
 .container, .container-pair{
     margin: 23px 90px;
+    justify-content: space-around;
 }
 
 .container-pair {
@@ -105,8 +99,9 @@ li > span {
 }
 
 #why-trackgenix .text {
-    padding-top: 14px;
+    padding: 20px;
     font-size: 14px;
+    /* flex: 50; */
 }
 
 #why-trackgenix .text h4 {
@@ -117,9 +112,11 @@ li > span {
 }
 
 #why-trackgenix img {
-    height: 115px;
+    margin: 20px;
+    max-height: 170px;
     border-radius: 17px;
     object-fit: cover;
+    flex: 50;
 }
 
 /*------ CONTACT US SECTION ------*/
@@ -187,24 +184,52 @@ button.btn-reset {
 }
 
 @media only screen and (min-width: 768px) {
-    #home-page {
-        margin-right: 5%;
-        margin-left: 5%;
+
+    #home-page, .container, .container-pair{
+        margin-right: 6%;
+        margin-left: 6%;
     }
+
+    #home-page div {
+        text-align: justify;
+    }
+
     #home-page > div, #why-trackgenix > div {
         flex-direction: row;
-        text-align: justify;
-        /* justify-content: space-around; */
     }
+
+    .app-text, .history-info img {
+        margin-right: 46px;
+    } 
+
+    #why-trackgenix .text, #why-trackgenix img {
+        /* margin: 20px; */
+        max-width: 40%;
+    }
+
     .history-info img, .container-pair .text {
         order: unset;
     }
 
-    .app-info img {
-        height: max-content;
+    .page-content img {
+        min-width: 30%;
+        height:auto;
     }
-    #home-page img {
-        min-width: 30%
+     
+    .page-content h3 {
+        border-bottom: 5px solid #373867;
+        margin-right: 6%;
+        margin-left: 6%;
+        text-align: justify;
     }
 
+    #contact-us form {
+        width: 40%;
+        margin: 30px 0 30px 6%;
+    }
+
+    .history-text a {
+        text-align: center;
+        margin: 13px 0;
+    }
   }
