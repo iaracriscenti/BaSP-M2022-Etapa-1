@@ -101,7 +101,7 @@ li > span {
 #why-trackgenix .text {
     padding: 20px;
     font-size: 14px;
-    /* flex: 50; */
+    flex: 50;
 }
 
 #why-trackgenix .text h4 {
