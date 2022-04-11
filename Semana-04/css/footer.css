@@ -1,3 +1,7 @@
+footer {
+    text-align: center;
+}
+
 #listed-elements {
     background-color: #373867;
     color: #FFFFFF;
@@ -7,7 +11,7 @@
 
 #listed-elements h3 {
     display: none;
-    /* padding: 60px 0px 16px 100px; */
+    top: 20px;
     margin-top: 30px;
     font-weight: 700;
     font-size: 30px;
@@ -31,10 +35,6 @@
     line-height: 22px;
 }
 
-footer {
-    text-align: center;
-}
-
 .social-media {
     margin: 13px 0px;
 }
@@ -51,8 +51,7 @@ footer .text p {
 @media only screen and (min-width: 768px) {
 
     #listed-elements h3 {
-        display: block;
-        top: 20px;
+        display: block;   
     }
 
     #listed-elements div {
@@ -60,7 +59,6 @@ footer .text p {
     }
 
     #listed-elements div ol, #listed-elements h4 {
-        
         font-size: 15px; 
     }
 }
