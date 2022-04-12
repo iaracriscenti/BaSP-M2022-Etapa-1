@@ -2,16 +2,19 @@ footer {
     text-align: center;
 }
 
+footer p {
+    font-size: 12px;
+}
+
 #listed-elements {
-    background-color: #373867;
-    color: #FFFFFF;
     display: flex;
     justify-content: space-around;
+    background-color: #373867;
+    color: #FFFFFF;
 }
 
 #listed-elements h3 {
     display: none;
-    top: 20px;
     margin-top: 30px;
     font-weight: 700;
     font-size: 30px;
@@ -19,7 +22,7 @@ footer {
 }
 
 #listed-elements div {
-    margin: 15px; 
+    margin: 15px;
 }
 
 #listed-elements h4 {
@@ -29,10 +32,10 @@ footer {
 }
 
 #listed-elements div ol {
-    list-style: decimal ;
     font-weight: 400;
     font-size: 11px;
     line-height: 22px;
+    list-style: decimal;
 }
 
 .social-media {
@@ -42,23 +45,4 @@ footer {
 .social-media a {
     padding: 0px 8px;
     text-decoration: none;
-}
-
-footer .text p {
-    font-size: 12px;
-}
-
-@media only screen and (min-width: 768px) {
-
-    #listed-elements h3 {
-        display: block;   
-    }
-
-    #listed-elements div {
-        margin-top: 70px;
-    }
-
-    #listed-elements div ol, #listed-elements h4 {
-        font-size: 15px; 
-    }
 }
