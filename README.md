@@ -34,4 +34,10 @@ The activity consisted in adapting the landing page for cellphones, tablets and 
 
 You can have an overview following this link: https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-04/index.html
 
+### Week 05
+
+The activity consisted of solving *JavaScript exercises*. To solve them, basic concepts were used such as: variables, operators, strings, arrays, loops, iterations and functions. Each exercise was done in different .js files. 
+
+To view the results follow this link https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html, open the browser inspector and go to the console section.
+
 _By Iara Criscenti_
