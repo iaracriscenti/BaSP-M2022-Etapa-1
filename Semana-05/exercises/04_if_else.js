@@ -1,4 +1,4 @@
-console.log('--EXERCISE 4: IF ELSE'); 
+console.log('--EXERCISE 4: IF ELSE');
 
 /* a. Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es
 mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un
@@ -45,7 +45,7 @@ if (age < 2) {
 } else if ((age >= 31) && (age <= 60)) {
     alert('Adulto');
 } else if ((age >= 61) && (age <= 75)) {
-    alert('Adulto mayor');   
+    alert('Adulto mayor');
 } else {
     alert('Anciano');
 }
