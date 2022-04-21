@@ -1,0 +1,102 @@
+nav {
+    display: none;
+    position: fixed;
+    bottom: 1px;
+    width: 25%;
+    height: 100%;
+    background-color: #B1B2B6;
+}
+
+nav .nav-header {
+    text-align: center;
+}
+
+nav input {
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 35px auto;
+    padding: 5px 20px;
+    background: #FFFFFF;
+    background-image: url('../assets/icons/Icon-search.png');
+    background-position: 90%;
+    background-size: 38px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 3px;
+    color: #373867;
+}
+
+nav input::placeholder {
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    opacity: 0.5;
+}
+
+nav .nav-header a {
+    padding: 10px 27px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+nav h2 {
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #49A37B;
+    text-transform: uppercase;
+}
+
+a.log-in {
+    background: #49A37B;
+    margin-right: 20px;
+}
+
+a.sign-up {
+    background: #373867;
+}
+
+.menu, .get-in-touch {
+    margin: 35px auto;
+    width: 80%;
+}
+
+.menu li a, .get-in-touch p {
+    padding-top: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding-top: 8px;
+}
+
+a:visited, a:link {
+    color: #373867;
+}
+
+.get-in-touch {
+    margin-top: 40%;
+}
+
+.get-in-touch p {
+    display: inline-block;
+}
+
+.get-in-touch .last p:last-child {
+    display: block;
+    margin-left: 24px;
+    padding-top: 4px;
+}
+
+.get-in-touch img {
+    position: relative;
+    top: 3px;
+    height: 18px;
+}
