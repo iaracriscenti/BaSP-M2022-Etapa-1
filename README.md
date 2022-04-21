@@ -40,4 +40,14 @@ The activity consisted of solving *JavaScript exercises*. To solve them, basic c
 
 To view the results follow this link https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html, open the browser inspector and go to the console section.
 
-_By Iara Criscenti_
+### Week 06
+
+The activity consisted in the implementation of JavaScript and DOM concepts for the creation of the following screens:
+```
+- Log in 
+- Employee Sign up 
+- Contact us section located in Home Page (optional)
+```
+All the screens are connected to each other and were made following a responsive design. Also, the necessary validations have been done with Javascript.
+
+<p align="right"><i>By Iara Criscenti</i></p>
