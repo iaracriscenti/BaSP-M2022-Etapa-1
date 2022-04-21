@@ -50,4 +50,6 @@ The activity consisted in the implementation of JavaScript and DOM concepts for 
 ```
 All the screens are connected to each other and were made following a responsive design. Also, the necessary validations have been done with Javascript.
 
+You can have an overview following this link: https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
+
 <p align="right"><i>By Iara Criscenti</i></p>
