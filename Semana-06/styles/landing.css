@@ -134,7 +134,6 @@
 }
 
 #contact-us input, select, textarea {
-    margin-bottom: 15px;
     padding: 4px 6px;
     width: 100%;
     height: 25px;
@@ -144,6 +143,7 @@
 }
 
 #contact-us select {
+    margin-bottom: 15px;
     box-sizing: unset;
 }
 
@@ -175,10 +175,32 @@
     color: #373867;
 }
 
-button.btn-send {
+button#btn-send {
     background: #AACE9B;
 }
 
-button.btn-reset {
+button#btn-reset {
     background: #DADADA;
+}
+
+.status-control p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 12px;
+    color: #F33413;
+    visibility: hidden;
+}
+
+#contact-us .status-control.error input, #contact-us .status-control.error textarea {
+    border: solid 1px #F33413;
+}
+
+.status-control.error p {
+    visibility: visible;
+}
+
+.status-control.error label, .status-control.error input {
+    color: #F33413;
 }

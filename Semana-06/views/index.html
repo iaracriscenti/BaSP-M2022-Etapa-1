@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="../styles/sidebar.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/styles.css">
+        <script src="../javascript/contact.js"></script>
         <title>Trackgenix</title>
     </head>
     <body>
@@ -187,37 +188,37 @@
             <article id="contact-us">
                 <h3>Contact us</h3>
                 <form>
-                    <div>
+                    <div class="status-control">
                         <label>Name</label>
-                        <input type="text" placeholder="Insert your name">
+                        <input id="name" type="text" placeholder="Insert your name">
+                        <p>Error message</p>
                     </div>
-                    <div>
+                    <div class="status-control">
                         <label>Email</label>
-                        <input type="email" placeholder="Insert your email">
+                        <input id="email" type="text" placeholder="Insert your email">
+                        <p>Error message</p>
                     </div>
-                    <div>
-                        <label>Category</label>
-                        <select name="Category">
-                            <option value="Quality-Assurance">
-                                Quality Assurance
+                    <div class="status-control">
+                        <label>Contact area</label>
+                        <select name="contact area">
+                            <option value="Human Resources">
+                                Human Resources
                             </option>
-                            <option value="Developer">
-                                Developer
+                            <option value="Systems">
+                                Systems
                             </option>
-                            <option value="Project-Manager">
-                                Project Manager
-                            </option>
-                            <option value="Human-Resourses">
-                                Human Resourses
+                            <option value="Marketing">
+                                Marketing
                             </option>
                         </select>
                     </div>
-                    <div>
-                        <textarea name="message" cols="30" rows="10" placeholder="Write us a message..."></textarea>
+                    <div class="status-control">
+                        <textarea id="textarea" name="message" cols="30" rows="10" placeholder="Write us a message..."></textarea>
+                        <p>Error message</p>
                     </div>
                     <div class="buttons">
-                        <button class="btn-send">Send Message</button>
-                        <button class="btn-reset">Reset</button>
+                        <button id="btn-send" type="submit">Send Message</button>
+                        <button id="btn-reset" type="submit">Reset</button>
                     </div>
                 </form>
             </article>
