@@ -57,18 +57,18 @@
     color: #373867;
 }
 
-.login-form p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: justify;
-    color: #F33413;
-}
-
 .login-form a, .login-form p {
     margin-top: 10px;
     font-weight: 500;
     font-size: 12px;
     opacity: 0.9;
+}
+
+.login-form p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #F33413;
 }
 
 .login a {
