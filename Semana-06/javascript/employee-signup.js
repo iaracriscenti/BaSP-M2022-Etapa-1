@@ -103,6 +103,17 @@ window.onload = function () {
         return (control !== 0);  
     };
 
+    function hasFourLetters (string){
+        control=0;
+        for (var i=0;i<string.length;i++) {
+            //Check if the character isn't a special character nor a number
+            if(!isASymbol(string[i]) && isNaN(string[i])) {
+                control++;
+            };
+        };
+        //returns true if the string has more than 3 letters
+        return (control > 3);
+    };
 
     function checkName (){
         if (checkInput(name)) {
@@ -239,8 +250,8 @@ window.onload = function () {
     function checkLocation(){
         if(checkInput(location)){
             return 'Location field incomplete';
-        } else if (location.value.length < 4){
-            showError(location,'It must contain at least 4 characters.');
+        } else if (location.value.length < 4 || !hasFourLetters(location.value)) {
+            showError(location,'It must contain at least 4 letters.');
             return 'Location name too short';
         } else if (isASymbol(location.value)){
             showError(location,'Please insert a valid location.');
