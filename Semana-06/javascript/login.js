@@ -41,7 +41,7 @@ window.onload = function () {
         } else {
             if (checkInput(password)) {
                 return 'Password field incomplete';
-            } else if (!formatValidator(password.value) || !isNaN(password.value)){
+            } else if (!formatValidator(password.value) || !isNaN(password.value) || isASymbol(password.value)){
                 //show error with message
                 showError(password,'Please insert a valid password. It must contain numbers and letters.');
                 return 'Invalid password';
@@ -70,11 +70,19 @@ window.onload = function () {
             };
         };
         //returns true if the string contains digits
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
+        return (control !== 0);
+    };
+
+    function isASymbol (string) {
+        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
+        var control = 0;
+        for (var i=0; i < string.length; i++) {
+            if (symbols.includes(string[i])) {
+                    control ++;
+            };
         };
+        //returns true if the string contains a special character
+        return (control !== 0);  
     };
 
     function showError (input,message) {

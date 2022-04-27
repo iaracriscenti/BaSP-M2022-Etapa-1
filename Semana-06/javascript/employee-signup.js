@@ -87,31 +87,21 @@ window.onload = function () {
             };
         };
         //returns true if the string contains digits
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
-        };
+        return (control !== 0);
     };
 
     //Check if there are special characters in the string
     function isASymbol (string) {
-        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'";
+        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
         var control = 0;
         for (var i=0; i < string.length; i++) {
-            for(var x=0;x < symbols.length;x++) {
-                if (string[i] == symbols[x]) {
+            if (symbols.includes(string[i])) {
                     control ++;
-                };
-            }
+            };
         };
         //returns true if the string contains a special character
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
-        };
-    }
+        return (control !== 0);  
+    };
 
 
     function checkName (){
@@ -238,7 +228,7 @@ window.onload = function () {
         } else if (isNaN(postCode.value) || isASymbol(postCode.value)) {
             showError(postCode,'Please insert a number.');
             return 'Invalid Postcode';
-        } else if (postCode.value.length < 3 || postCode.value.length > 5) {
+        } else if (postCode.value.length < 4 || postCode.value.length > 5) {
             showError(postCode,'Please insert a number between 4 and 5 digits.');
             return 'Invalid Postcode';
         } else {
@@ -266,7 +256,7 @@ window.onload = function () {
         } else if (address.value.length < 5 || address.value.trim().split(" ").length < 2){
             showError(address,'It must contain at least 5 characters with a space in between.');
             return 'Invalid Address name';
-        } else if (!formatValidator(address.value) || !isNaN(address.value.split(" ").join("")) || isASymbol(address.value)) {
+        } else if (!formatValidator(address.value) || !isNaN(address.value.split(" ").join("")) || isASymbol(address.value.split(" ").join(""))) {
             showError(address,'It must contain numbers and letters.');
             return 'Invalid Address name';
         } else {

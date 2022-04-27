@@ -58,30 +58,20 @@ window.onload = function(){
             };
         };
         //returns true if the string contains digits
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
-        };
+        return (control !== 0);
     };
 
     //Check if there are special characters in the string
     function isASymbol (string) {
-        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'";
+        var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'"+" ";
         var control = 0;
         for (var i=0; i < string.length; i++) {
-            for(var x=0;x < symbols.length;x++) {
-                if (string[i] == symbols[x]) {
+            if (symbols.includes(string[i])) {
                     control ++;
-                };
-            }
+            };
         };
         //returns true if the string contains a special character
-        if (control == 0) {
-            return false;
-        } else {
-            return true;
-        };
+        return (control !== 0);  
     };
 
     function checkName (){
