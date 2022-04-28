@@ -1,0 +1,48 @@
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+#listed-elements {
+    display: flex;
+    justify-content: space-around;
+    background-color: #373867;
+    color: #FFFFFF;
+}
+
+#listed-elements h3 {
+    display: none;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#listed-elements div {
+    margin: 15px;
+}
+
+#listed-elements h4 {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#listed-elements div ol {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+    list-style: decimal;
+}
+
+.social-media {
+    margin: 13px 0px;
+}
+
+.social-media a {
+    padding: 0px 8px;
+    text-decoration: none;
+}

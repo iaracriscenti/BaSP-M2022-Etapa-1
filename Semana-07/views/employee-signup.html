@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/employee-signup.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../javascript/employee-signup.js"></script>
+    <title>Trackgenix - Sign Up</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Trackgenix SA</h1>
+    </header>
+    <nav>
+        <div class="nav-header">
+            <input type="search" placeholder="Search">
+            <a class="log-in" href="login.html">
+                Log in
+            </a>
+            <a class="sign-up" href="employee-signup.html">
+                Sign up
+            </a>
+        </div>
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>
+                    <a href="index.html">HomePage</a>
+                </li>
+                <li>
+                    <a href="index.html#features">Features</a>
+                </li>
+                <li>
+                    <a href="index.html#why-trackgenix">Why Trackgenix?</a>
+                </li>
+                <li>
+                    <a href="index.html#contact-us">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="get-in-touch">
+            <h2>Get in touch</h2>
+            <div>
+                <img src="../assets/icons/Icon-mail.png">
+                <p>
+                    mailinfo@trackgenix.com
+                </p>
+            </div>
+            <div>
+                <img src="../assets/icons/Icon-arrow.png">
+                <p>
+                    123-456789
+                </p>
+            </div>
+            <div class="last">
+                <img src="../assets/icons/Icon-home.png">
+                <p>
+                    123 fake road #2000
+                </p>
+                <p>Rosario, Argentina</p>
+            </div>
+        </div>
+    </nav>
+    <div class="page-content">
+        <div class="sign-up">
+            <h2>Sign up</h2>
+            <form class="sign-up-form">
+                <div class="form-container">
+                    <div class="status-control">
+                        <label>Name *</label>
+                        <input id='name' type="text" placeholder="Insert your name">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Surname *</label>
+                        <input id='surname' type="text" placeholder="Insert your surname">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>ID number *</label>
+                        <input id='idNumber' type="text" placeholder="Insert your ID number">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Birth date *</label>
+                        <input id='birthDate' type="date" placeholder="dd/mm/aaaa">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Phone number *</label>
+                        <input id='phoneNumber' type="text" placeholder="Insert your phone number">
+                        <p>Error message</p>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="status-control">
+                        <label>Address *</label>
+                        <input id='address' type="text" placeholder="Insert your Address">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Location *</label>
+                        <input id='location' type="text" placeholder="Insert your Location">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>PostCode *</label>
+                        <input id='postCode' type="text" placeholder="Insert postcode">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Email *</label>
+                        <input id="email" type="text" placeholder="Insert your email">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Password *</label>
+                        <input id='password' type="password" placeholder="************">
+                        <p>Error message</p>
+                    </div>
+                    <div class="status-control">
+                        <label>Repeat password *</label>
+                        <input id='repeatPassword' type="password" placeholder="************">
+                        <p>Error message</p>
+                    </div>
+                </div>
+            </form>
+            <form class="sign-up-btn">
+                <button type="submit" id="btn-sign-up">Create</button>
+            </form>
+        </div>
+    </div>
+    <section id="listed-elements">
+        <h3>Trackgenix</h3>
+        <div>
+            <h4>Products</h4>
+            <ol>
+                <li>Features</li>
+                <li>Downloads</li>
+                <li>Integrations</li>
+                <li>Extras</li>
+            </ol>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <ol>
+                <li>About us</li>
+                <li>Clients</li>
+                <li>Resources</li>
+                <li>Blog</li>
+            </ol>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <ol>
+                <li>Help</li>
+                <li>Tutorials</li>
+                <li>API</li>
+                <li>Contact</li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../assets/icons/twitter-logo.png">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="../assets/icons/linkedin-logo.png">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="../assets/icons/github-logo.png">
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <img src="../assets/icons/instagram-logo.png">
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <img src="../assets/icons/facebook-logo.png">
+            </a>
+        </div>
+        <div>
+            <p>Rosario, Argentina</p>
+            <p>
+                Copyright &copy; 2022 Radium Rocket. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

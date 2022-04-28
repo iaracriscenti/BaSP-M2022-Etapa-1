@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #373867;
+}
+
+p, label, span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+button, textarea {
+    font-family: 'Roboto';
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        border-bottom: 5px solid #373867;
+        font-size: 60px;
+        text-align: justify;
+        line-height: 70px;
+    }
+
+    .page-content h3 {
+        margin: 0 6%;
+        border-bottom: 5px solid #373867;
+        text-align: justify;
+    }
+
+    #home-page {
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+
+    #home-page div {
+        text-align: justify;
+    }
+
+    #home-page > div, #why-trackgenix > div {
+        flex-direction: row;
+    }
+
+    .app-text, .history-info img {
+        margin-right: 6%;
+    }
+
+    #why-trackgenix .text, #why-trackgenix img {
+        max-width: 40%;
+    }
+
+    .history-info img, .container:nth-child(odd) .text {
+        order: unset;
+    }
+    
+    .history-text a, #why-trackgenix a {
+        font-size: 12px;
+    }
+
+    .history-text a {
+        margin: 13px 0;
+        text-align: center;
+    }
+
+    #contact-us form {
+        margin: 3% 0 3% 6%;
+        width: 40%;
+    }
+    
+    #contact-us label {
+        font-size: 16px;
+    }
+
+    #listed-elements h3 {
+        display: block;
+    }
+
+    #listed-elements div {
+        margin-top: 70px;
+    }
+
+    #listed-elements div ol, #listed-elements h4 {
+        font-size: 15px;
+    }
+
+    .page-content .sign-up-form {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header, footer, .page-content, #listed-elements {
+        margin-left: 25%;
+    }
+
+    nav {
+        display: inline;
+    }
+}
