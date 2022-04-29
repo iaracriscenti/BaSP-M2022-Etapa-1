@@ -313,6 +313,37 @@ window.onload = function () {
             '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value)+'\n Phone Number: '
             +phoneNumber.value+'\n Address: '+address.value+'\n Location: '+location.value+'\n PostCode: '
             +postCode.value+'\n Email: '+email.value+'\n Password: '+password.value);
+            
+            // API Request
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' + name.value  + '&lastName=' +
+            surname.value + '&dni=' + idNumber.value + '&dob=' + dateFormat(birthDate.value) + '&phone=' + phoneNumber.value
+            + '&address=' + address.value + '&city=' + location.value + '&zip=' + postCode.value + '&email=' + email.value 
+            + '&password=' + password.value)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (jsonResponse) {
+                console.log("json", jsonResponse)
+                if (jsonResponse.success) {
+                    //Success message
+                    alert('API Response: '+jsonResponse.msg)
+                } else {
+                throw jsonResponse
+                }
+            })
+            .catch(function (error) {
+                var alertError = [];
+                console.log(error);
+                //if there is more than one error show them all, if not show that one only.
+                if (error.hasOwnProperty('errors')) {
+                    Object.entries(error.errors).forEach(element => {
+                        alertError += '\n' + element[1].msg;
+                    });
+                alert('Sorry, an error has occurred. Please check this items: '+alertError);
+                } else {
+                    alert('API Response: '+ error.msg);
+                };
+            });
         } else {
             alert("Sorry, the user could't be created. Please check:" + errors);
         };

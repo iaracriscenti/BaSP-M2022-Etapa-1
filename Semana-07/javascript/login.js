@@ -109,8 +109,38 @@ window.onload = function () {
         //alerts in case of error or success
         if (validation(email) == '' && validation(password) == '') {
             alert('Succesful login! \n Email: '+email.value+'\n Password: '+password.value);
+            
+            // API Request
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value 
+            + '&password=' + password.value)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (jsonResponse) {
+                console.log("json", jsonResponse)
+                if (jsonResponse.success) {
+                    //Success message
+                    alert('API Response: '+jsonResponse.msg)
+                } else {
+                throw jsonResponse
+                }
+            })
+            .catch(function (error) {
+                var alertError = [];
+                //if there is more than one error show them all, if not show that one only.
+                if (error.hasOwnProperty('errors')) {
+                    Object.entries(error.errors).forEach(element => {
+                        alertError += '\n' + element[1].msg;
+                        // alert('API Response: '+ element[1].msg);
+                    });
+                alert('Sorry, an error has occurred. Please check this items:'+alertError)               
+                } else {
+                    alert('API Response: '+ error.msg);
+                };
+            });
         } else {
             alert('An error has ocurred. Please enter the data correctly.'+'\n'+validation(email) +'\n'+ validation(password));
-        }
+        };
+        
     });
 }
