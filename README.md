@@ -52,4 +52,19 @@ All the screens are connected to each other and were made following a responsive
 
 You can have an overview following this link: https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
 
+### Week 07
+
+The activity consisted in the addition of a HTTP request in each form using the Javascript Fetch method. This request is made only if all the data entered in the form pass all the validations. 
+
+In addition, the following actions were added:
+
+If the response of the request is successful:
+- display an alert indicating the information obtained from the response of the request made. 
+- for Signup screen: save the data entered in the local storage of the browser and load them in the form each time the page is refreshed.
+
+if the response of the request is not successful:
+- display an alert indicating that there was an error and show them from the information obtained of the response of the request made.
+
+You can have an overview following this link: https://iaracriscenti.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html
+
 <p align="right"><i>By Iara Criscenti</i></p>
