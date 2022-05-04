@@ -14,6 +14,64 @@ button, textarea {
     font-family: 'Roboto';
 }
 
+#myModal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    padding: 5px;
+    width: 70%;
+    margin: 3% auto;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    box-shadow: 0px 3px 5px #373867;
+    border-radius: 5px;
+}
+
+.close {
+    padding-top: 2px;
+    float: right;
+}
+
+.close img:hover, .close img:focus {
+    transform: scale(1.35);
+    transition: transform .35s ease;
+    cursor: pointer;
+}
+
+.modal-content h2, .modal-content p {
+    font-family: 'Roboto';
+    margin-right: 30px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.modal-content h2 {
+    font-weight: 700;
+}
+
+.modal-content p {
+    text-align:left ;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+from {top: -300px; opacity: 0}
+to {top: 0; opacity: 1}
+}
+
 @media only screen and (min-width: 768px) {
 
     h1 {
@@ -21,6 +79,10 @@ button, textarea {
         font-size: 60px;
         text-align: justify;
         line-height: 70px;
+    }
+
+    .modal-content {
+        width: 50%;
     }
 
     .page-content h3 {
@@ -97,5 +159,10 @@ button, textarea {
 
     nav {
         display: inline;
+    }
+
+    .modal-content {    
+        margin-left: 47.5%;
+        width: 30%;
     }
 }

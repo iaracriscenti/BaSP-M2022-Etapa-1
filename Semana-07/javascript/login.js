@@ -102,17 +102,37 @@ window.onload = function () {
 
     //Display the alert indicating that there was an error
     function displayError(res) {
+        modal.style.display = "block";
+        modalContent.style.backgroundColor= "#FFFFFF";
         var alertError = [];
         //if there is more than one error show them all, if not show that one only.
         if (res.hasOwnProperty('errors')) {
             Object.entries(res.errors).forEach(element => {
                 alertError += '\n' + element[1].msg;
             });
-        alert('Sorry, an error has occurred. Please check this items: '+alertError);
+        textBox.innerHTML ='Sorry, an error has occurred. Please check this items: '+alertError;
         } else {
-            alert('Sorry, an error has occurred: '+ res.msg);
+            textBox.innerHTML ='Sorry, an error has occurred: '+ res.msg;
         };
     };
+
+    //Modal elements
+    var modal = document.getElementById("myModal");
+    var modalContent = document.querySelector(".modal-content")
+    var span = document.querySelector(".close");
+    var textBox = document.querySelector(".modal-content p")
+
+    // When the user clicks on <span> (x), close the modal
+    span.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
 
     //Button login functionality
     button.addEventListener('click', function(e){
@@ -122,7 +142,7 @@ window.onload = function () {
         validation(password);
         //alerts in case of error or success
         if (validation(email) == '' && validation(password) == '') {
-            alert('Succesful login! \n Email: '+email.value+'\n Password: '+password.value);
+            // alert('Succesful login! \n Email: '+email.value+'\n Password: '+password.value);
 
             // API Request
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email.value
@@ -133,7 +153,10 @@ window.onload = function () {
             .then(function (jsonResponse) {
                 if (jsonResponse.success) {
                     //Success message
-                    alert('The request was successful: '+jsonResponse.msg)
+                    modal.style.display = "block";
+                    modalContent.style.backgroundColor= "#AACE9B";
+                    textBox.textContent = 'The request was successful: '+jsonResponse.msg;
+                    // alert('The request was successful: '+jsonResponse.msg)
                 } else {
                 throw jsonResponse
                 }
@@ -142,7 +165,10 @@ window.onload = function () {
                 displayError(error);
             });
         } else {
-            alert('An error has ocurred. Please enter the data correctly.'+'\n'+validation(email) +'\n'+ validation(password));
+            modal.style.display = "block";
+            modalContent.style.backgroundColor= "#FFFFFF";
+            textBox.innerHTML = 'An error has ocurred. Please enter the data correctly.'+ '<br>'+validation(email) +'<br>'+ validation(password);
+            // alert('An error has ocurred. Please enter the data correctly.'+'\n'+validation(email) +'\n'+ validation(password));
         };
 
     });

@@ -324,17 +324,37 @@ window.onload = function () {
 
     //Display the alert indicating that there was an error
     function displayError(res) {
+        modal.style.display = "block";
+        modalContent.style.backgroundColor= "#FFFFFF";
         var alertError = [];
         //if there is more than one error show them all, if not show that one only.
         if (res.hasOwnProperty('errors')) {
             Object.entries(res.errors).forEach(element => {
                 alertError += '\n' + element[1].msg;
             });
-        alert('Sorry, an error has occurred. Please check this items: '+alertError);
+        textBox.innerHTML ='Sorry, an error has occurred. Please check this items: <br>'+alertError;
         } else {
-            alert('Sorry, an error has occurred: '+ res.msg);
+            textBox.innerHTML ='Sorry, an error has occurred:<br> '+ res.msg;
         };
     };
+
+    //Modal elements
+    var modal = document.getElementById("myModal");
+    var modalContent = document.querySelector(".modal-content")
+    var span = document.querySelector(".close");
+    var textBox = document.querySelector(".modal-content p")
+
+    // When the user clicks on <span> (x), close the modal
+    span.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
 
     //Create button functionality
     signupButton.addEventListener('click',function(e){
@@ -349,16 +369,16 @@ window.onload = function () {
         //captures the validations that return error text and saves it in an array
         for (var i=0; i<validations.length;i++){
             if (validations[i] !== '') {
-                errors += '\n' + validations[i];
+                errors += '<br>' + validations[i];
             };
         };
 
         //alerts in case of error or success
         if (errors == ''){
-            alert('All the info submitted succesfully!\n Name: '+name.value+ '\n Surname: '+surname.value+
-            '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value,true)+'\n Phone Number: '
-            +phoneNumber.value+'\n Address: '+address.value+'\n Location: '+location.value+'\n PostCode: '
-            +postCode.value+'\n Email: '+email.value+'\n Password: '+password.value);
+            // alert('All the info submitted succesfully!\n Name: '+name.value+ '\n Surname: '+surname.value+
+            // '\n ID number: '+idNumber.value+'\n Birth Date: '+dateFormat(birthDate.value,true)+'\n Phone Number: '
+            // +phoneNumber.value+'\n Address: '+address.value+'\n Location: '+location.value+'\n PostCode: '
+            // +postCode.value+'\n Email: '+email.value+'\n Password: '+password.value);
 
             // API Request
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name=' + name.value  + '&lastName=' +
@@ -372,7 +392,9 @@ window.onload = function () {
                 //In case of success:
                 if (jsonResponse.success) {
                     //Show success message
-                    alert('The request was successful: '+ jsonResponse.msg)
+                    modal.style.display = "block";
+                    modalContent.style.backgroundColor= "#AACE9B";
+                    textBox.textContent = 'The request was successful: '+jsonResponse.msg;
                     //Call the function to save the data
                     saveData(jsonResponse);
                 } else {
@@ -383,7 +405,9 @@ window.onload = function () {
                 displayError(error);
             });
         } else {
-            alert("Sorry, the user could't be created. Please check:" + errors);
+            modal.style.display = "block";
+            modalContent.style.backgroundColor= "#FFFFFF";
+            textBox.innerHTML = "Sorry, the user could't be created. Please check: <br>" + errors;
         };
     });
 };
